@@ -1,0 +1,106 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Theo's Lab: D&D 5e</title>
+
+  <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+    crossorigin="anonymous" />
+  <!-- Don't use this in production: -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+  <style>
+  body {
+    background-color: rgb(124, 38, 38);
+    color: rgb(216, 210, 210) ;
+    z-index: -1;
+  }
+  .button{
+    margin: 2px !important;
+    font-weight: 600;
+    border-color: rgb(126, 124, 124);
+  }
+  form{
+    padding-top: 3px;
+  }
+  .wrapper {
+    /* margin: auto;
+    border: 0%;
+    padding: 0%; */
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-auto-rows: 100px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .left-image {
+    grid-column: 1 / 4;
+    background-color: rgb(5, 1, 1);
+    background-image: url(./DiceCloseup.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 90%;
+    background-position-x: -350%;
+    background-position-y: center ;
+  }
+  .center-text {
+    padding: 5%;
+    grid-column: 4 / 18;
+    background-color: rgb(20, 9, 9);
+    color: rgb(216, 210, 210) ;
+  }
+  .right-image {
+    grid-column: 18 / 21;
+    background-color: rgb(5, 1, 1);
+    background-image: url(./DiceSet.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position-x: 155%;
+    background-position-y: center ;
+  }
+  .new-line {
+    white-space: pre-line;
+    text-align: justify;
+  } 
+  .beyond{
+    padding: 1px;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 5px;
+  }
+  #made-by{
+    padding: auto;
+    margin: 10px 10px  ;
+    border: auto;
+  }
+  footer{
+    text-align: justify;
+  }
+  </style>
+
+  <header><h1> <img width='30px' padding='5px' src="./d20_logo-blue.png" alt="">Dungeons & Dragons 5th Edition</h1> <h3 id='made-by' >by Theo Bueno</h3></header>
+  
+
+  <!-- We will put our React component inside this div. -->
+  <div id="root"></div>
+
+  <!-- Load React. -->
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-router@5/umd/react-router.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-router-dom@5/umd/react-router-dom.min.js"></script>
+  <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
+  
+  <!-- Load our Axios and our component. -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./DnD_Fetch.jsx" defer type="text/babel"></script>
+</body>
+
+</html>

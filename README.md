@@ -5,7 +5,7 @@
   This Repo consists of the Module 15 exercises, the first part of which involves
 creating a functional 'ATM' Simulation.
  
-## How to Use - ATM List:
+## How to Use: Exercise 1 - My Fake ATM:
   When the need for a deposit arises, first select deposit from the dropdown menu,
 then click or type in the value of your deposit, followed by the submit button.
   Should you need a withdraw, also nicknamed 'Cash Back' in this instance, change

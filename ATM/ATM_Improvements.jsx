@@ -29,12 +29,11 @@ const Account = () => {
 		setDeposit(Number(event.target.value));
 	};
 	const handleSubmit = (event) => {
-
-	let newTotal = 0
-	atmMode === "Deposit" ? newTotal = deposit : 
-	atmMode === "Cash Back" && deposit <= totalState ?  
-	newTotal -= deposit : alert("Not Enough Funds") && setValidTransaction(false);
-	setTotalState(totalState + newTotal); 
+		let newTotal = 0
+		atmMode === "Deposit" ? newTotal = deposit : 
+		atmMode === "Cash Back" && deposit <= totalState ?  
+		newTotal -= deposit : alert("Not Enough Funds") && setValidTransaction(false);
+		setTotalState(totalState + newTotal); 
 
 /* Original Code bellow, my code above
 		 let newTotal = isDeposit ? totalState + deposit : totalState - deposit;
