@@ -17,7 +17,7 @@ of string into bold text. The string has '#' and '*' on the long descriptions li
 .md file.
 
 ## Appearance:
-<img src= "XL_readme_pic.png" width='500'/><img src= "SM_readme_pic.png" width='150'/>
+<img src= "./XL_readme_pic.png" width='500'/><img src= "./SM_readme_pic.png" width='150'/>
 
 
 ## Links:
